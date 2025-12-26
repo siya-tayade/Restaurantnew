@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | Delish Bites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <i class="fa-solid fa-utensils"></i>
+      <span>Delish Bites</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html" class="active cart-link">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count" id="cart-count">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="cart-page">
+    <h2>Your Cart</h2>
+    <div class="cart-container">
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-summary" id="cart-summary">
+        <h3>Order Summary</h3>
+        <div class="summary-row"><span>Subtotal</span><span id="subtotal">₹0</span></div>
+        <div class="summary-row"><span>GST (5%)</span><span id="tax">₹0</span></div>
+        <div class="summary-row total"><span>Total</span><span id="total">₹0</span></div>
+        <a class="btn-primary full" id="checkout-btn" href="checkout.html">Proceed to Checkout</a>
+        <button class="btn-secondary full" id="clear-cart">Clear Cart</button>
+      </div>
+    </div>
+    <p class="empty-msg" id="empty-msg">Your cart is empty.</p>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Delish Bites • Crafted for taste</p>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

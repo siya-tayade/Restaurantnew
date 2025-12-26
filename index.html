@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delish Bites | Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <i class="fa-solid fa-utensils"></i>
+      <span>Delish Bites</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html" class="cart-link">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count" id="cart-count">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Fresh • Tasty • Fast 🌸</h1>
+        <p>Made with Love 💕 – cute, aesthetic bites delivered to your door.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="menu.html">View Menu</a>
+          <a class="btn-secondary" href="menu.html#featured">Order Now</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1604908176997-9f6b6392a1b1?q=80&w=1400&auto=format&fit=crop" alt="Restaurant Hero" onerror="this.src='https://picsum.photos/seed/hero/1400/900';this.onerror=null">
+      </div>
+    </section>
+
+    <section class="featured" id="featured">
+      <h2>Featured Dishes</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=1200&auto=format&fit=crop" alt="Margherita Pizza" onerror="this.src='https://picsum.photos/seed/pizza/1200/800';this.onerror=null">
+          <div class="card-body">
+            <h3>Classic Margherita Pizza</h3>
+            <p>Stone-baked pizza with fresh mozzarella, basil, and tomato.</p>
+            <span class="price">₹299</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" alt="Pasta Alfredo" onerror="this.src='https://picsum.photos/seed/pasta/1200/800';this.onerror=null">
+          <div class="card-body">
+            <h3>Creamy Pasta Alfredo</h3>
+            <p>Rich, velvety sauce tossed with fettuccine and herbs.</p>
+            <span class="price">₹349</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200&auto=format&fit=crop" alt="Chocolate Lava Cake" onerror="this.src='https://picsum.photos/seed/dessert/1200/800';this.onerror=null">
+          <div class="card-body">
+            <h3>Chocolate Lava Cake</h3>
+            <p>Warm molten center served with vanilla ice cream.</p>
+            <span class="price">₹199</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Delish Bites • Crafted for taste</p>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>
